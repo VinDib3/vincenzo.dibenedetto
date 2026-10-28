@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b68">
+<meta name="description" content="Profilo professionale di Vincenzo DIBENEDETTO.">
+<title>Vincenzo DIBENEDETTO | Profilo professionale</title>
+<style>
+:root{
+  --blue:#30221e; --blue2:#9b6042; --gold:#c9854b; --gold-light:#f3dfca;
+  --ink:#f3e9de; --muted:#bca99a; --paper:#191513; --line:#49362d; --white:#241d19;
+  --max:1160px; --shadow:0 16px 42px rgba(18,59,104,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.topline{height:5px;background:linear-gradient(90deg,#211815 0 68%,var(--gold) 68% 100%)}
+header{position:sticky;top:0;z-index:20;background:rgba(28,22,19,.96);backdrop-filter:blur(12px);border-bottom:1px solid #3d2d25}
+.nav{height:82px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;min-width:0}
+.brand-mark{height:45px;width:45px;border-radius:12px;background:#8d5339;color:#fff3e6;display:grid;place-items:center;font-size:1rem;font-weight:850;letter-spacing:-.06em;box-shadow:inset 0 -4px 0 rgba(230,162,60,.9)}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-size:.94rem;letter-spacing:.035em;color:#e7d5c5}
+.brand-text small{font-size:.68rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-top:5px}
+nav{display:flex;align-items:center;gap:24px}
+nav a{text-decoration:none;font-size:.86rem;color:#c7b4a5;font-weight:600}
+nav a:hover{color:#e7d5c5}
+.nav-cta{border-radius:7px;background:#a96542;color:#fff5ea!important;padding:10px 16px;box-shadow:0 4px 12px rgba(18,59,104,.12)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 20%,rgba(139,78,52,.32),transparent 36%),linear-gradient(118deg,#211815 0%,#30221e 58%,#493025 100%);color:#f7ede3;padding:88px 0 76px}
+.hero:before{content:"";position:absolute;width:510px;height:510px;border:1px solid rgba(230,177,126,.14);border-radius:50%;right:-110px;top:-250px}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border:1px solid rgba(201,133,75,.28);border-radius:50%;right:10px;bottom:-260px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:70px}
+.eyebrow{display:flex;align-items:center;gap:11px;color:#e5ad79;font-size:.76rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.eyebrow:before{content:"";width:30px;height:3px;background:var(--gold)}
+h1{font-size:clamp(3rem,6.4vw,5.6rem);line-height:.98;letter-spacing:-.07em;margin:22px 0 25px;font-weight:800}
+h1 span{color:#dfa16d}
+.lead{font-size:clamp(1.08rem,1.8vw,1.25rem);line-height:1.8;color:#d6c5b7;max-width:690px;margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:7px;text-decoration:none;font-size:.9rem;font-weight:750;transition:.2s;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#182b40}
+.btn-gold:hover{background:#f2b954;transform:translateY(-2px)}
+.btn-outline{border-color:rgba(255,255,255,.5);color:white;background:rgba(255,255,255,.04)}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+.profile-panel{background:#2b211c;color:#f3e9de;border-radius:14px;padding:28px;box-shadow:0 22px 60px rgba(0,0,0,.32);border:1px solid #584033;border-top:4px solid var(--gold)}
+.monogram{width:78px;height:78px;border-radius:12px;background:#493025;color:#f3d9c3;display:grid;place-items:center;font-size:1.7rem;font-weight:850;letter-spacing:-.06em;border:1px solid #644838}
+.panel-label{margin:22px 0 6px;color:#dfa16d;font-size:.72rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
+.profile-panel h2{font-size:1.42rem;line-height:1.3;letter-spacing:-.04em;margin:0 0 12px}
+.profile-panel p{margin:0;color:var(--muted);font-size:.92rem}
+.mini-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:19px}
+.mini-tags span{background:#3a2b24;border:1px solid #594235;border-radius:5px;padding:6px 8px;font-size:.72rem;font-weight:650;color:#e4c5aa}
+section{padding:82px 0}
+.section-head{max-width:760px;margin-bottom:38px}
+.kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:#c9854b;font-weight:850;display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:22px;height:3px;background:var(--gold)}
+h2.section-title{font-size:clamp(2rem,4vw,3.15rem);letter-spacing:-.065em;line-height:1.1;margin:13px 0 15px;color:#e7d5c5}
+.section-intro{font-size:1.03rem;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.about-copy p{margin-top:0;color:#536273;font-size:1rem}
+.quote{background:#241d19;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:24px;font-size:1.22rem;line-height:1.55;font-weight:700;letter-spacing:-.025em;color:var(--blue);box-shadow:var(--shadow)}
+.principles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}
+.principle{background:#241d19;border:1px solid var(--line);border-radius:9px;padding:17px}
+.principle strong{display:block;color:#e7d5c5;font-size:.92rem;margin-bottom:4px}
+.principle span{font-size:.83rem;color:var(--muted)}
+.blue-section{background:#211b17}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:#241d19;border:1px solid var(--line);border-radius:11px;padding:25px;min-height:220px;position:relative;overflow:hidden;transition:.2s}
+.card:before{content:"";position:absolute;top:0;left:0;width:54px;height:4px;background:var(--gold)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-number{font-size:.73rem;color:#c9854b;font-weight:850;letter-spacing:.12em}
+.card h3{font-size:1.15rem;letter-spacing:-.03em;margin:19px 0 9px;color:#e7d5c5}
+.card p{font-size:.91rem;color:var(--muted);margin:0}
+.experience{display:grid;grid-template-columns:210px 1fr;gap:35px;padding:29px 0;border-top:1px solid var(--line)}
+.experience:last-child{border-bottom:1px solid var(--line)}
+.exp-meta{font-size:.84rem;color:var(--muted)}
+.exp-meta strong{display:block;color:#e7d5c5;font-size:.95rem;margin-bottom:5px}
+.exp-content h3{margin:0 0 4px;font-size:1.27rem;letter-spacing:-.035em;color:#e7d5c5}
+.org{font-weight:700;color:#bca99a;font-size:.93rem}
+.exp-content p{color:var(--muted);margin:12px 0 0}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.tag{font-size:.74rem;color:#d8b99f;border:1px solid #49362d;padding:5px 9px;border-radius:5px;background:#2c231e}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.edu{padding:25px;border-radius:11px;border:1px solid var(--line);background:#241d19;position:relative}
+.edu:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold);border-radius:11px 0 0 11px}
+.edu .year{font-size:.73rem;color:#c9854b;font-weight:850;text-transform:uppercase;letter-spacing:.1em}
+.edu h3{margin:11px 0 6px;font-size:1.1rem;line-height:1.4;letter-spacing:-.025em;color:#e7d5c5}
+.edu p{margin:0;color:var(--muted);font-size:.9rem}
+.contact{background:#a96542;color:#fff5ea;padding:72px 0;position:relative;overflow:hidden}
+.contact:after{content:"";position:absolute;width:340px;height:340px;border:1px solid rgba(230,162,60,.28);border-radius:50%;right:-90px;top:-170px}
+.contact-grid{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:35px}
+.contact .kicker{color:#e5ad79}
+.contact h2{font-size:clamp(2.1rem,4.4vw,3.55rem);line-height:1.05;letter-spacing:-.065em;margin:12px 0;color:#fff}
+.contact p{color:#d8e4ef;max-width:610px}
+.contact .btn-gold{background:var(--gold);color:#172638}
+footer{background:#110e0c;padding:22px 0;color:#bca99a;font-size:.8rem}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:820px){
+ nav{gap:13px}nav a:not(.nav-cta){display:none}
+ .hero{padding:62px 0}.hero-grid,.about-grid{grid-template-columns:1fr;gap:34px}
+ .profile-panel{max-width:540px}.cards{grid-template-columns:1fr 1fr}
+ .experience{grid-template-columns:1fr;gap:8px}.contact-grid{align-items:flex-start;flex-direction:column}
+ section{padding:62px 0}
+}
+@media(max-width:560px){
+ .wrap{width:calc(100% - 30px)}.nav{height:70px}.brand-text small{font-size:.59rem}
+ .cards,.edu-grid,.principles{grid-template-columns:1fr}
+ h1{font-size:3.25rem}.hero-grid{gap:30px}
+}
+@media print{header,.actions{display:none}.hero,section,.contact{padding:35px 0}.profile-panel,.card{box-shadow:none}}
+</style>
+
+<style id="warm-dark-overrides">
+body{background:#191513;color:#f3e9de}
+header{background:rgba(28,22,19,.96)!important;border-bottom-color:#49362d!important}
+.brand-text strong{color:#f4e8dc!important}
+nav a{color:#c7b4a5!important}
+nav a:hover{color:#e6b17e!important}
+.hero{background:radial-gradient(ellipse at 82% 20%,rgba(139,78,52,.32),transparent 36%),linear-gradient(118deg,#211815 0%,#30221e 58%,#493025 100%)!important}
+.hero:before{border-color:rgba(230,177,126,.14)!important}
+.hero:after{border-color:rgba(201,133,75,.28)!important}
+.eyebrow,.kicker,.card-number,.exp-meta strong,.edu .year,.panel-label{color:#dfa16d!important}
+h2.section-title,.card h3,.exp-content h3,.edu h3{color:#f0dfcf!important}
+.lead,.section-intro,.about-copy p,.card p,.exp-meta,.exp-content p,.edu p,.principle span{color:#bca99a!important}
+.profile-panel,.card,.principle,.edu,.quote{background:#241d19!important;color:#f3e9de!important;border-color:#49362d!important}
+.profile-panel{border-top-color:#c9854b!important}
+.monogram{background:#493025!important;color:#f3d9c3!important;border-color:#644838!important}
+.mini-tags span,.tag{background:#30241e!important;border-color:#594235!important;color:#e4c5aa!important}
+.blue-section{background:#211b17!important}
+.principle strong{color:#f0dfcf!important}
+.quote{border-left-color:#c9854b!important}
+.card:before,.edu:before{background:#c9854b!important}
+.contact{background:linear-gradient(115deg,#211815,#493025)!important}
+.contact .kicker{color:#e5ad79!important}
+.contact p{color:#d6c5b7!important}
+.btn-gold{background:#c9854b!important;color:#211712!important}
+.btn-outline{border-color:#795744!important;color:#f6e8db!important}
+footer{background:#110e0c!important;color:#bca99a!important}
+@media(max-width:820px){nav a:not(.nav-cta){display:none}}
+</style>
+
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inizio" aria-label="Vincenzo DIBENEDETTO, inizio pagina">
+      <span class="brand-mark">VD</span>
+      <span class="brand-text"><strong>VINCENZO DIBENEDETTO</strong><small>Profilo professionale</small></span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <a href="#profilo">Chi sono</a><a href="#competenze">Competenze</a><a href="#esperienza">Esperienza</a><a href="#formazione">Formazione</a><a class="nav-cta" href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inizio">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Profilo professionale</div>
+      <h1>Vincenzo<br><span>DIBENEDETTO</span></h1>
+      <p class="lead">Consulente, ingegnere gestionale e professionista della trasformazione organizzativa e digitale. Mi occupo di connettere strategia, persone, processi e tecnologia per accompagnare organizzazioni complesse nei percorsi di cambiamento.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#esperienza">Il mio percorso <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-outline" href="#contatti">Contattami</a>
+      </div>
+    </div>
+    <aside class="profile-panel" aria-label="Sintesi del profilo">
+      <div class="monogram" aria-hidden="true">VD</div>
+      <div class="panel-label">In sintesi</div>
+      <h2>Visione analitica.<br>Approccio concreto.</h2>
+      <p>Un percorso tra consulenza, innovazione, organizzazione e analisi dei dati, con l’interesse per i contesti in cui il cambiamento può generare un impatto reale sulle persone e sui servizi.</p>
+      <div class="mini-tags"><span>Consulenza</span><span>Strategia</span><span>Processi</span><span>Innovazione</span><span>Data analytics</span></div>
+    </aside>
+  </div>
+</section>
+
+<section id="profilo">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Chi sono</div>
+      <h2 class="section-title">Curiosità, metodo e voglia di costruire.</h2>
+      <p class="section-intro">Il mio profilo nasce dall’incontro tra formazione ingegneristica, esperienza consulenziale e interesse per l’evoluzione delle organizzazioni.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>Sono un professionista con una formazione in Ingegneria Gestionale e un percorso lavorativo nella consulenza. Mi interessa capire come funzionano i sistemi complessi, individuare opportunità di miglioramento e accompagnare le persone nella traduzione delle idee in risultati concreti.</p>
+        <p>Nel mio lavoro alterno analisi e confronto con gli stakeholder, visione d’insieme e attenzione ai dettagli operativi. Credo nel valore della collaborazione tra competenze diverse e nella capacità di unire pensiero strutturato, ascolto e pragmatismo.</p>
+        <p>La formazione continua e il confronto con persone ed esperienze differenti sono per me strumenti essenziali per crescere, ampliare la prospettiva e affrontare nuove sfide.</p>
+      </div>
+      <div>
+        <div class="quote">“L’innovazione parte dalle persone: capire i bisogni, mettere in relazione le competenze e trasformare le idee in valore.”</div>
+        <div class="principles">
+          <div class="principle"><strong>Visione d’insieme</strong><span>Comprendere le connessioni tra strategia, persone e processi.</span></div>
+          <div class="principle"><strong>Metodo analitico</strong><span>Leggere i dati e affrontare i problemi con struttura.</span></div>
+          <div class="principle"><strong>Concretezza</strong><span>Portare le idee verso soluzioni applicabili.</span></div>
+          <div class="principle"><strong>Collaborazione</strong><span>Valorizzare il confronto e il lavoro multidisciplinare.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blue-section" id="competenze">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Competenze e interessi professionali</div>
+      <h2 class="section-title">Un profilo trasversale.</h2>
+      <p class="section-intro">Competenze che uniscono capacità analitiche, sensibilità organizzativa e attitudine a lavorare in contesti dinamici e multidisciplinari.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="card-number">01 / STRATEGIA</div><h3>Consulenza direzionale</h3><p>Supportare le organizzazioni nella lettura delle priorità, nella definizione degli obiettivi e nella costruzione di percorsi di evoluzione.</p></article>
+      <article class="card"><div class="card-number">02 / ORGANIZZAZIONE</div><h3>Processi e modelli operativi</h3><p>Analizzare il funzionamento delle attività, chiarire ruoli e responsabilità e individuare opportunità di miglioramento.</p></article>
+      <article class="card"><div class="card-number">03 / INNOVAZIONE</div><h3>Trasformazione digitale</h3><p>Connettere esigenze organizzative e possibilità tecnologiche, con attenzione all’adozione e al valore generato.</p></article>
+      <article class="card"><div class="card-number">04 / DATI</div><h3>Analisi e data analytics</h3><p>Utilizzare dati e informazioni come supporto alla comprensione dei fenomeni e a decisioni più consapevoli.</p></article>
+      <article class="card"><div class="card-number">05 / RELAZIONI</div><h3>Stakeholder engagement</h3><p>Favorire il dialogo tra professionalità differenti, raccogliere bisogni e facilitare il lavoro condiviso.</p></article>
+      <article class="card"><div class="card-number">06 / CAMBIAMENTO</div><h3>Progettazione e implementazione</h3><p>Trasformare le linee di indirizzo in attività, coordinare prospettive diverse e mantenere il focus sugli obiettivi.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="esperienza">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Esperienza professionale</div>
+      <h2 class="section-title">Il percorso lavorativo.</h2>
+      <p class="section-intro">Un’esperienza consulenziale in cui affrontare problemi complessi, lavorare con interlocutori diversi e contribuire a progetti di cambiamento.</p>
+    </div>
+    <div class="experience">
+      <div class="exp-meta"><strong>Esperienza attuale</strong>Consulenza</div>
+      <div class="exp-content">
+        <h3>Senior Health-care Consultant</h3>
+        <div class="org">Partner4Innovation – Gruppo Digital360</div>
+        <p>Attività di consulenza strategica e organizzativa a supporto di percorsi di trasformazione e innovazione. Il ruolo richiede di comprendere il contesto, analizzare i processi, facilitare il confronto tra stakeholder e contribuire a tradurre gli obiettivi in iniziative concrete.</p>
+        <div class="tag-row"><span class="tag">Consulenza</span><span class="tag">Strategia</span><span class="tag">Organizzazione</span><span class="tag">Innovazione digitale</span></div>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="exp-meta"><strong>Esperienze progettuali</strong>Contesti complessi</div>
+      <div class="exp-content">
+        <h3>Analisi e miglioramento dei servizi</h3>
+        <div class="org">Progetti in ambito pubblico e organizzativo</div>
+        <p>Partecipazione a progettualità che coinvolgono analisi dei bisogni, organizzazione delle risorse, esperienza dell’utente e revisione dei processi. Esperienze in contesti regionali differenti, tra cui Piemonte, Lombardia e Calabria, che hanno consolidato la capacità di adattarsi a organizzazioni e interlocutori diversi.</p>
+        <div class="tag-row"><span class="tag">Analisi dei processi</span><span class="tag">Esperienza utente</span><span class="tag">Servizi pubblici</span><span class="tag">Lavoro multidisciplinare</span></div>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="exp-meta"><strong>Approccio di lavoro</strong>Dalla visione all’azione</div>
+      <div class="exp-content">
+        <h3>Progettazione e accompagnamento al cambiamento</h3>
+        <div class="org">Coordinamento tra bisogni, processi e strumenti</div>
+        <p>Un approccio che parte dall’ascolto e dalla comprensione del contesto, passa attraverso la definizione del modello operativo e prosegue con il confronto con gli utenti e il supporto all’implementazione. L’obiettivo è rendere le soluzioni comprensibili, sostenibili e realmente utilizzabili.</p>
+        <div class="tag-row"><span class="tag">Problem solving</span><span class="tag">Stakeholder management</span><span class="tag">Implementazione</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blue-section" id="formazione">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Formazione</div>
+      <h2 class="section-title">Una base solida, una prospettiva in evoluzione.</h2>
+      <p class="section-intro">La formazione ingegneristica mi ha dato strumenti per affrontare problemi complessi; il percorso di approfondimento sulla Pubblica Amministrazione amplia lo sguardo sui modelli organizzativi e sull’innovazione istituzionale.</p>
+    </div>
+    <div class="edu-grid">
+      <article class="edu"><div class="year">Laurea magistrale</div><h3>Ingegneria Gestionale</h3><p>Politecnico di Torino — percorso ICT &amp; Data Analytics. Formazione su gestione, sistemi, analisi dei dati e innovazione.</p></article>
+      <article class="edu"><div class="year">In corso</div><h3>Master di II livello in Organizzazione e Innovazione nella Pubblica Amministrazione</h3><p>Sole 24 Ore Formazione — approfondimento dei modelli organizzativi e dei processi di innovazione nella PA.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="kicker">Contatti</div>
+      <h2>Le idee crescono<br>quando si condividono.</h2>
+      <p>Disponibile al confronto su progetti, opportunità professionali e iniziative di innovazione, organizzazione e trasformazione digitale.</p>
+    </div>
+    <div class="actions">
+      <!-- Sostituire il link generico con l'URL personale prima della pubblicazione -->
+      <a class="btn btn-gold" href="https://www.linkedin.com/in/vincenzo-dibenedetto-51b10a1a7" target="_blank" rel="noopener noreferrer">Collegati su LinkedIn ↗</a>
+      <a class="btn btn-outline" href="mailto:dibenedettovincenzo98@gmail.com">dibenedettovincenzo98@gmail.com ↗</a>
+      <a class="btn btn-outline" href="#inizio">Torna all’inizio ↑</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Vincenzo DIBENEDETTO</span><span>Consulenza · Organizzazione · Innovazione</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
